@@ -43,6 +43,23 @@ class LinkedList:
                     return True
                 current = current.next
         return False
+    def intercambiarAdyacente(self):
+        if self.First is None or self.First.next is None:
+            return
+        prev = None
+        current = self.First
+        self.First = current.next
+        while current and current.next:
+            siguienteNodo = current.next
+            siguientePar = siguienteNodo.next
+
+            siguienteNodo.next = current
+            current.next = siguientePar
+
+            if prev: 
+                prev.next = siguienteNodo
+            prev = current
+            current = siguientePar
 
     def __len__(self):
         return self.Size
@@ -53,17 +70,9 @@ class LinkedList:
         while current is not None:
             string += str(current)
             if current.next is not None:
-                string += ", "
+                string += "-> "
             current = current.next
         string += "]"
         return string
 
 
-Mylist = LinkedList()
-Mylist.Append(1)
-Mylist.Append(2)
-Mylist.Append(3)
-Mylist.Append(4)
-
-Mylist.Remove(1)
-print(Mylist)

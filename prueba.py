@@ -1,3 +1,7 @@
+#este archivo netamente lo cree para hacer pruebas durante la clase, ya despues le aplique la implemetacion de clases POO 
+#la cree para llevar una idea de como crear los metodos en las clases y no comenzar a la deriva
+
+
 
 from listaEnlazada import LinkedList
 from listaEnlazada import Node
@@ -15,26 +19,19 @@ for palabra in fraseSeparada:
         print(palabra[i])
         listaLetras.append(palabra[i])
         
+        
 print (listaLetras)
 
 lista_ascii = [ord(letra) for letra in listaLetras]
 print(lista_ascii)
 
-#linkedAscii = [ord(letra) for letra in listaLetras]
-#print(linkedAscii)
+
+sumaImpar = [valor + (2*n + 1) for n, valor in enumerate(lista_ascii)]
+print(sumaImpar)
 
 
+for valor in sumaImpar:
+    linkedAscii.Append(valor)
 
-
-
-#contadorImpar = 1
-#for impar in lista_ascii :
- #   for i in range (0,len(impar)):
-  #      contadorImpar =+2
-   #     print(contadorImpar)
-
-
-#for hola in lista_ascii:
-    #for i in range(0,size(hola)):
-    #    contadorImpar =+ 2
-        
+print(linkedAscii)
+linkedAscii.Remove()

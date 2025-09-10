@@ -1,10 +1,9 @@
 class separar:
-    def __init__(self,frase,fraseSeparada):
+    def __init__(self,frase,):
         self.frase = frase
-        self.fraseSeparada = fraseSeparada
 
+    def fraseSeparada(self):
+        return self.frase.split()
 
-    def separador(self, frase, fraseSeparada):
-        for palabra in  fraseSeparada: 
-            for i in range(0,len(palabra)):
-                print(palabra[i])
+    def letrasPorPalabra(self):
+        return [list(palabra) for palabra in self.palabras()]
