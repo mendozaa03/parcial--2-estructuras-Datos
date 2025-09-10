@@ -1,0 +1,1 @@
+el archivo "prueba" no tiene ninguna funcion dentro del proyecto. se creo en clase con el fin de llevar la logica del enunciado para posteriromente implementar esos metodos en clases usando POO. el archivo lo dejo como evidencia de una de la parte trabajada dentro de clase
