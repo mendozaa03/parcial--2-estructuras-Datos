@@ -11,7 +11,6 @@ def obtenerFrases():
     if response.status_code == 200:
        data = response.json()
        frases = [item["q"] for item in data]
-       print(frases)
        return frases
     else:
         print("Error:", response.status_code)

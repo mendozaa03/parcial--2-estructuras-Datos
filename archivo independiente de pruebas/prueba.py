@@ -3,8 +3,8 @@
 
 
 
-from listaEnlazada import LinkedList
-from listaEnlazada import Node
+from proyecto.principalP.encriptacion.listaEnlazada import LinkedList
+from proyecto.principalP.encriptacion.listaEnlazada import Node
 frase = "hola"
 longitud = len(frase)
 fraseSeparada= frase.split()
